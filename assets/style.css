@@ -1,0 +1,32 @@
+.header {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  height: 75px;
+  background-color: rgba( 107, 124, 136, 100%);
+  text-decoration: none;
+}
+
+.header h1 {
+  margin: 20px;
+  font-size: 40px;
+  color: rgba( 255, 255, 255, 100%);
+  text-decoration: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-direita {
+  margin: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.lista {
+  margin: 3.5px;
+  text-decoration: none;
+  color: rgba( 255, 255, 255, 100%);;
+}
+
