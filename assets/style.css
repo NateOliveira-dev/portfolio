@@ -76,7 +76,28 @@ body{
   padding: 0.5em;
 }
 
+#sobre {
+  margin-top: 2em;
+  font-weight: 800;
+  font-size: 56px;
+  color: #6A7B88;
+  padding: 0.5em;
+}
+
 p {
   padding: 5px;
   line-height: 30px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lista-skills {
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  text-align: left;
+  font-style: italic;
 }
