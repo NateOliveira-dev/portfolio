@@ -6,8 +6,11 @@ body{
   display: flex; 
   justify-content: space-between;
   height: 75px;
+  width: 100%;
   background-color: rgba( 255, 255, 255, 100%);
   text-decoration: none;
+  position:fixed;
+  z-index: 2;
 }
 
 .header h1 {
@@ -68,15 +71,7 @@ body{
   padding: 2em;
 }
 
-#nate {
-  margin-top: 2em;
-  font-weight: 800;
-  font-size: 56px;
-  color: #6A7B88;
-  padding: 0.5em;
-}
-
-#sobre {
+.red-line {
   margin-top: 2em;
   font-weight: 800;
   font-size: 56px;
@@ -100,4 +95,37 @@ a {
   line-height: 50px;
   text-align: left;
   font-style: italic;
+}
+
+/* estilizando a pagina de redes sociais*/
+.container-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #6A7B88 0.5em;
+  border-radius: 2em;
+  padding: 1em;
+  margin: 1.5em;
+  cursor: pointer;
+}
+
+.main-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 8em;
+  margin: 1em;
+}
+
+.nome-social {
+  border-top: double #6A7B88;
+  padding: 1em;
+}
+
+.nome-social a {
+  text-decoration: none;
+  color: #6A7B88;
 }
