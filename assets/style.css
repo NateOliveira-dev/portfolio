@@ -81,7 +81,7 @@ body{
 }
 
 p {
-  padding: 5px;
+  padding: 1em;
   line-height: 30px;
   text-decoration: none;
 }
@@ -131,6 +131,33 @@ a {
   color: #6A7B88;
 }
 
+.main-projetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-projetos{
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid #6A7B88 0.5em;
+  border-radius: 2em;
+  padding: 1em;
+  margin: 1.5em;
+  cursor: pointer;
+}
+
+.nome-projetos{
+  padding: 1em;
+}
+
+.projetos-img{
+  width: 16em;
+  margin: 0.5em;
+  border: solid#6A7B88 0.2em;
+  border-radius: 10px;
+}
 /* Estilos para telas menores ou iguais a 768px */
 @media (max-width: 768px) {
   .header {
@@ -179,14 +206,10 @@ a {
 
 /* Estilos para telas menores ou iguais a 768px */
 @media (max-width: 768px) {
-  /* ... Seus outros estilos ... */
-
   .main-containers {
     flex-direction: column; /* Alinhar verticalmente em telas menores */
     align-items: center; /* Centralizar horizontalmente */
   }
-
-  /* ... Seus outros estilos ... */
 }
 
 
