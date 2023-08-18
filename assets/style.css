@@ -53,6 +53,7 @@ body{
   z-index: 1;
   position: absolute;
   padding-top: 275px;
+  max-width: 200px;
 }
 
 .background {
@@ -72,7 +73,7 @@ body{
 }
 
 .red-line {
-  margin-top: 2em;
+  margin-top: 0.5em;
   font-weight: 800;
   font-size: 56px;
   color: #6A7B88;
@@ -129,3 +130,63 @@ a {
   text-decoration: none;
   color: #6A7B88;
 }
+
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .header-direita {
+    margin: 10px;
+  }
+
+  #foto-nate {
+    width: 50%;
+    padding-top: 160px; /* Reduzi o valor para não cobrir o título */
+  }
+
+  .main {
+    font-size: 18px;
+    padding: 1em;
+  }
+}
+
+/* Estilos para telas maiores que 768px */
+@media (min-width: 769px) {
+  .header {
+    flex-direction: row;
+    height: 75px;
+  }
+
+  .header-direita {
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  #foto-nate {
+    width: 25%;
+    padding-top: 225px; /* Ajustei para não cobrir o título em telas maiores */
+  }
+
+  .main {
+    font-size: 22px;
+    padding: 2em;
+  }
+}
+
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+  /* ... Seus outros estilos ... */
+
+  .main-containers {
+    flex-direction: column; /* Alinhar verticalmente em telas menores */
+    align-items: center; /* Centralizar horizontalmente */
+  }
+
+  /* ... Seus outros estilos ... */
+}
+
+
