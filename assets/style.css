@@ -11,6 +11,7 @@ body{
   text-decoration: none;
   position:fixed;
   z-index: 2;
+  border-bottom: #6A7B88 solid 5px;
 }
 
 .header h1 {
@@ -72,6 +73,10 @@ body{
   padding: 2em;
 }
 
+.main p {
+  text-align: justify;
+}
+
 .red-line {
   margin-top: 0.5em;
   font-weight: 800;
@@ -81,6 +86,7 @@ body{
 }
 
 p {
+  text-align: justify;
   padding: 1em;
   line-height: 30px;
   text-decoration: none;
@@ -152,9 +158,16 @@ display: flex;
   padding: 1em;
 }
 
+.nome-projetos a {
+  font-size: 25px;
+  color: #6A7B88;
+  text-decoration: none;
+  text-align: justify;
+}
+
 .projetos-img{
-  width: 16em;
-  margin: 0.5em;
+  width: 100%;
+  margin: auto;
   border: solid#6A7B88 0.2em;
   border-radius: 10px;
 }
@@ -211,5 +224,44 @@ display: flex;
     align-items: center; /* Centralizar horizontalmente */
   }
 }
+
+/* Estilos para telas maiores que 768px */
+/* Você pode adicionar estilos padrão aqui */
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Altera o layout do cabeçalho para empilhado */
+    align-items: center; /* Centraliza os elementos no cabeçalho */
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+  }
+
+  .logo h1 {
+    font-size: 24px; /* Reduz o tamanho da fonte do logo */
+  }
+
+  .header-direita ul {
+    flex-direction: column; /* Empilha os itens do menu */
+    align-items: center; /* Centraliza os itens do menu */
+  }
+
+  /* .perfil {
+    text-align: center; /* Centraliza o conteúdo no perfil */
+    /* margin-top: 20px; Adiciona um espaçamento no topo */
+  /* } */ 
+
+  .main h1 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título principal */
+  }
+
+  .container-projetos {
+    flex-direction: column; /* Empilha os containers de projetos */
+  }
+
+  .projetos-img {
+    max-width: 100%; /* Garante que as imagens dos projetos não ultrapassem a largura do contêiner */
+  }
+}
+
 
 
