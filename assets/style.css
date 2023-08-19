@@ -147,6 +147,7 @@ a {
 display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   border: solid #6A7B88 0.5em;
   border-radius: 2em;
   padding: 1em;
